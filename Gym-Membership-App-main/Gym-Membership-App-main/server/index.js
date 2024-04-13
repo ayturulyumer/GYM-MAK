@@ -37,6 +37,7 @@ const app = express();
 // run().catch(console.dir);
 
 mongoose
+//change ip adress of DB
   .connect(`mongodb://192.168.3.136:27017/gym-membership-app`)
   .then(() => console.log("DB Connected"))
   .catch((err) => console.log(err));
